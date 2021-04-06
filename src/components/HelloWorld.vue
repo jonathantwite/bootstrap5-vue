@@ -39,13 +39,13 @@ import Vue from 'vue';
 import alert from './bootstrap/components/alert.vue';
 
 export default Vue.extend({
-  name: 'HelloWorld',
-  components: {
-      alert
+    name: 'HelloWorld',
+    components: {
+        alert
     },
-  props: {
-    msg: String,
-  },
+    props: {
+        msg: String,
+    },
 });
 </script>
 

@@ -17,24 +17,24 @@ export default {
 };
 
 const Template = (args, { argTypes }) => ({
-    components: {Breadcrumb},
+    components: { Breadcrumb },
     props: Object.keys(argTypes),
     template: '<breadcrumb :items="$props.items"></breadcrumb>',
-  });
+});
 
 export const primary = Template.bind({});
-primary.args = {items: [{text: 'Home', url: '/', active: true}]}
+primary.args = { items: [{ text: 'Home', url: '/', active: true }] };
   
 
 export const secondLevel = Template.bind({});
-secondLevel.args = {items: [
-    {text: 'Home', url: '/', active: false},
-    {text: 'Category', url: '/Category/', active: true}
-]};
+secondLevel.args = { items: [
+    { text: 'Home', url: '/', active: false },
+    { text: 'Category', url: '/Category/', active: true }
+] };
 
 export const thirdLevel = Template.bind({});
 thirdLevel.args = { items: [
-    {text: 'Home', url: '/', active: false},
-    {text: 'Category', url: '/Category/', active: false},
-    {text: 'Item', url: '/Category/Item', active: true}
-]};
+    { text: 'Home', url: '/', active: false },
+    { text: 'Category', url: '/Category/', active: false },
+    { text: 'Item', url: '/Category/Item', active: true }
+] };

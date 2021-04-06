@@ -27,7 +27,7 @@ import Vue, { PropType } from 'vue';
 export default Vue.extend({
     name: 'Breadcrumb',
     props: {
-        items: {type: Array as PropType<BreadcrumbItem[]>}
+        items: { type: Array as PropType<BreadcrumbItem[]> }
     }    
-})
+});
 </script>

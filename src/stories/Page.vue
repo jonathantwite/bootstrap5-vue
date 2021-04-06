@@ -63,26 +63,26 @@ import './page.css';
 import MyHeader from './Header.vue';
 
 export default {
-  name: 'my-page',
+    name: 'my-page',
 
-  components: { MyHeader },
+    components: { MyHeader },
 
-  props: {
-    user: {
-      type: Object,
+    props: {
+        user: {
+            type: Object,
+        },
     },
-  },
 
-  methods: {
-    onLogin() {
-      this.$emit('onLogin');
+    methods: {
+        onLogin() {
+            this.$emit('onLogin');
+        },
+        onLogout() {
+            this.$emit('onLogout');
+        },
+        onCreateAccount() {
+            this.$emit('onCreateAccount');
+        },
     },
-    onLogout() {
-      this.$emit('onLogout');
-    },
-    onCreateAccount() {
-      this.$emit('onCreateAccount');
-    },
-  },
 };
 </script>

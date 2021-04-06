@@ -34,26 +34,26 @@ import './header.css';
 import MyButton from './Button.vue';
 
 export default {
-  name: 'my-header',
+    name: 'my-header',
 
-  components: { MyButton },
+    components: { MyButton },
 
-  props: {
-    user: {
-      type: Object,
+    props: {
+        user: {
+            type: Object,
+        },
     },
-  },
 
-  methods: {
-    onLogin() {
-      this.$emit('onLogin');
+    methods: {
+        onLogin() {
+            this.$emit('onLogin');
+        },
+        onLogout() {
+            this.$emit('onLogout');
+        },
+        onCreateAccount() {
+            this.$emit('onCreateAccount');
+        },
     },
-    onLogout() {
-      this.$emit('onLogout');
-    },
-    onCreateAccount() {
-      this.$emit('onCreateAccount');
-    },
-  },
 };
 </script>

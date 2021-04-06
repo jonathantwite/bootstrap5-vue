@@ -6,17 +6,17 @@
 </template>
 
 <script lang="ts">
-import Vue, {PropType} from 'vue';
-import {ThemeColor} from '../types/theme-colors';
+import Vue, { PropType } from 'vue';
+import { ThemeColor } from '../types/theme-colors';
 
 export default Vue.extend({
     name: 'Alert',
     props: {
-        themeColor: {type: String as PropType<ThemeColor>},
-        dismissible: {type: Boolean as PropType<boolean>}
+        themeColor: { type: String as PropType<ThemeColor> },
+        dismissible: { type: Boolean as PropType<boolean> }
     },
     computed: {
-        classes: function(): string {
+        classes: function (): string {
             return "alert alert-" + this.themeColor + (this.dismissible ? " alert-dismissible fade show" : "");
         }
     }
